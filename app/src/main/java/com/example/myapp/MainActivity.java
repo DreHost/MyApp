@@ -10,6 +10,8 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
+    //add something....
+
     EditText inpjob ;
     TextView outjob ;
 
