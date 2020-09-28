@@ -10,52 +10,32 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView pa;
-    TextView pb;
+    TextView points ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        pa = findViewById(R.id.text2);
-        pb = findViewById(R.id.text4);
+        points = findViewById(R.id.text2);
 
     }
-    public void btn1(View v){
-        int p = Integer.valueOf(pa.getText().toString());
+    public void but1(View v){
+        int p = Integer.valueOf(points.getText().toString());
         p += 1;
-        pa.setText(p+"");
+        points.setText(p+"");
     }
-    public void btn2(View v){
-        int p = Integer.valueOf(pa.getText().toString());
+    public void but2(View v){
+        int p = Integer.valueOf(points.getText().toString());
         p += 2;
-        pa.setText(p+"");
+        points.setText(p+"");
     }
-    public void btn3(View v){
-        int p = Integer.valueOf(pa.getText().toString());
+    public void but3(View v){
+        int p = Integer.valueOf(points.getText().toString());
         p += 3;
-        pa.setText(p+"");
+        points.setText(p+"");
     }
-    public void btn4(View v){
-        int p = Integer.valueOf(pb.getText().toString());
-        p += 1;
-        pb.setText(p+"");
+    public void but4(View v){
+        points.setText("0");
     }
-    public void btn5(View v){
-        int p = Integer.valueOf(pb.getText().toString());
-        p += 2;
-        pb.setText(p+"");
-    }
-    public void btn6(View v){
-        int p = Integer.valueOf(pb.getText().toString());
-        p += 3;
-        pb.setText(p+"");
-    }
-    public void btn7(View v){
-        pa.setText(0+"");
-        pb.setText(0+"");
-    }
-
-
 }

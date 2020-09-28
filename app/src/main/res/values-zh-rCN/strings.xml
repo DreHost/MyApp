@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">计分器</string>
-    <string name="textp">0</string>
-    <string name="text2">队伍B</string>
-    <string name="but1">罚球</string>
+    <string name="text1">分数</string>
+    <string name="text2">0</string>
+    <string name="but1">+1 分</string>
     <string name="but2">+2 分</string>
     <string name="but3">+3 分</string>
-    <string name="butr">清零</string>
-    <string name="text1">队伍A</string>
+    <string name="but4">清空</string>
 </resources>
