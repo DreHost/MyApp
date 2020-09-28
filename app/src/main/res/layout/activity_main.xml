@@ -1,34 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/out"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="@string/text1"
-        android:textSize="32sp"
-        android:visibility="visible" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="393dp"
+        android:layout_height="443dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-    <EditText
-        android:id="@+id/inp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:inputType="none"
-        android:autofillHints="" />
+        <LinearLayout
+            android:layout_width="193dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/text1"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="@string/textp"
+                android:textSize="70sp" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/but3"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:onClick="btn3"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/but2"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:onClick="btn2"/>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/but1"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:onClick="btn1"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/text2"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="@string/textp"
+                android:textSize="70sp"/>
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/but3"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:onClick="btn6"/>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/but2"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:onClick="btn5"/>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/but1"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:onClick="btn4"/>
+        </LinearLayout>
+    </LinearLayout>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/but1" />
-</LinearLayout>
+        android:id="@+id/btn7"
+        android:layout_width="177dp"
+        android:layout_height="57dp"
+        android:text="@string/butr"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.491"
+        android:onClick="btn7"/>
+</android.support.constraint.ConstraintLayout>

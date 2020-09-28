@@ -10,33 +10,51 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
-    //add something....
-
-
-    final DecimalFormat  df   = new DecimalFormat("######0.00");
+    TextView pa;
+    TextView pb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //获取控件 out
-        final TextView outjob = findViewById(R.id.out);
-        outjob.setText("kkk");
+        pa = findViewById(R.id.text2);
+        pb = findViewById(R.id.text4);
 
-        //获取控件 inp
-        final EditText inpjob = findViewById(R.id.inp);
-        String text = inpjob.getText().toString();
-
-        //获取控件button
-        Button but = findViewById(R.id.button);
-        but.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String str1 = inpjob.getText().toString();
-                outjob.setText("Hi " + str1);
-            }
-        });
+    }
+    public void btn1(View v){
+        int p = Integer.valueOf(pa.getText().toString());
+        p += 1;
+        pa.setText(p+"");
+    }
+    public void btn2(View v){
+        int p = Integer.valueOf(pa.getText().toString());
+        p += 2;
+        pa.setText(p+"");
+    }
+    public void btn3(View v){
+        int p = Integer.valueOf(pa.getText().toString());
+        p += 3;
+        pa.setText(p+"");
+    }
+    public void btn4(View v){
+        int p = Integer.valueOf(pb.getText().toString());
+        p += 1;
+        pb.setText(p+"");
+    }
+    public void btn5(View v){
+        int p = Integer.valueOf(pb.getText().toString());
+        p += 2;
+        pb.setText(p+"");
+    }
+    public void btn6(View v){
+        int p = Integer.valueOf(pb.getText().toString());
+        p += 3;
+        pb.setText(p+"");
+    }
+    public void btn7(View v){
+        pa.setText(0+"");
+        pb.setText(0+"");
     }
 
 

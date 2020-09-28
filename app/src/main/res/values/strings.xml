@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">MyCal</string>
-    <string name="text1">Hello</string>
-    <string name="but1">OK</string>
+    <string name="app_name">MyCourtCounter</string>
+    <string name="text1">TeamA</string>
+    <string name="textp">0</string>
+    <string name="text2">TeamB</string>
+    <string name="but1">Free Throw</string>
+    <string name="but2">+2 Points</string>
+    <string name="but3">+3 Points</string>
+    <string name="butr">Reset</string>
 </resources>
