@@ -12,8 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     //add something....
 
-    EditText inpjob ;
-    TextView outjob ;
 
     final DecimalFormat  df   = new DecimalFormat("######0.00");
 
@@ -22,25 +20,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        inpjob = findViewById(R.id.inp);
-        outjob = findViewById(R.id.out);
+        //获取控件 out
+        final TextView outjob = findViewById(R.id.out);
+        outjob.setText("kkk");
 
+        //获取控件 inp
+        final EditText inpjob = findViewById(R.id.inp);
+        String text = inpjob.getText().toString();
+
+        //获取控件button
+        Button but = findViewById(R.id.button);
+        but.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String str1 = inpjob.getText().toString();
+                outjob.setText("Hi " + str1);
+            }
+        });
     }
 
-    public void btn1(View v){
-        double F = Double.valueOf(inpjob.getText().toString());
-        double C = ( F - 32 ) / 1.8;
-        outjob.setText(df.format(C));
-    }
 
-    public void btn2(View v){
-        double C = Double.valueOf(inpjob.getText().toString());
-        double F = C * 1.8 + 32;
-        outjob.setText(df.format(F));
-    }
-
-    public void btn3(View v){
-        inpjob.setText("");
-        outjob.setText("");
-    }
 }

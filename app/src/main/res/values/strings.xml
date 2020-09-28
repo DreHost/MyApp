@@ -1,7 +1,5 @@
 <resources>
-    <string name="app_name">Temperature Transeverter</string>
-    <string name="inp">InPut Temperature</string>
-    <string name="but1">F to C</string>
-    <string name="but2">C to F</string>
-    <string name="but3">Empty</string>
+    <string name="app_name">MyCal</string>
+    <string name="text1">Hello</string>
+    <string name="but1">OK</string>
 </resources>
