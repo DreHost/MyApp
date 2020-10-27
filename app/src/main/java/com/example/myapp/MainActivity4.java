@@ -10,7 +10,7 @@ import android.os.Handler;
 public class MainActivity4 extends ListActivity implements Runnable {
 
     Handler handler;
-    private com.example.myerc.DBHelper dbHelper;
+    private com.example.myapp.DBHelper dbHelper;
     private String TBNAME;
 
     @Override
@@ -20,8 +20,8 @@ public class MainActivity4 extends ListActivity implements Runnable {
     }
 
     public MainActivity4(Context context){
-        dbHelper = new com.example.myerc.DBHelper(context);
-        TBNAME = com.example.myerc.DBHelper.TB_NAME;
+        dbHelper = new com.example.myapp.DBHelper(context);
+        TBNAME = com.example.myapp.DBHelper.TB_NAME;
     }
 
     public  void add(RateItem item){

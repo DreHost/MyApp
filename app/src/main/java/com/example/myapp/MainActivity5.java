@@ -28,7 +28,7 @@ public class MainActivity5 extends ListActivity implements Runnable {
             public void handleMessage(Message msg) {
                 if (msg.what == 2) {
                     List<HashMap<String, String>> list = (List<HashMap<String, String>>) msg.obj;
-                    ListAdapter adapter = new SimpleAdapter(com.example.myerc.MainActivity5.this,list,R.layout.list_item,new String[]{"Country","Rate"},new int[]{R.id.Country,R.id.Rate});
+                    ListAdapter adapter = new SimpleAdapter(com.example.myapp.MainActivity5.this,list,R.layout.list_item,new String[]{"Country","Rate"},new int[]{R.id.Country,R.id.Rate});
                     setListAdapter(adapter);
                 }
                 super.handleMessage(msg);
@@ -36,7 +36,7 @@ public class MainActivity5 extends ListActivity implements Runnable {
 
         };
 
-        getListView().setOnItemClickListener((AdapterView.OnItemClickListener) com.example.myerc.MainActivity5.this);
+        getListView().setOnItemClickListener((AdapterView.OnItemClickListener) com.example.myapp.MainActivity5.this);
     }
     
 
